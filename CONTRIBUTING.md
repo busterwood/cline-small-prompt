@@ -57,7 +57,7 @@ If you're planning to work on a bigger feature, please create a [feature request
     sudo apt update
     sudo apt install -y \
       dbus \
-      libasound2 \
+      libasound2t64 \
       libatk-bridge2.0-0 \
       libatk1.0-0 \
       libdrm2 \
