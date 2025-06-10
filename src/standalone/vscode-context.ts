@@ -24,7 +24,7 @@ const EXTENSION_DIR = path.join(process.env.CLINE_DIR, "core", VERSION, "extensi
 const EXTENSION_MODE = process.env.IS_DEV === "true" ? ExtensionMode.Development : ExtensionMode.Production
 
 const extension: Extension<void> = {
-	id: "saoudrizwan.claude-dev",
+	id: "busterwood.clinesp",
 	isActive: true,
 	extensionPath: EXTENSION_DIR,
 	extensionUri: URI.file(EXTENSION_DIR),
