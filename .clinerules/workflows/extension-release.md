@@ -15,7 +15,7 @@ Minor Changes
 0ffb7dd: disabling shift hint for now & improving tooltip behavior
 79b76fd: Add support for custom model ID in AWS Bedrock provider, enabling use of Application Inference Profile.
 eb6e481: Full support for LaTeX rendering
-df37f29: Add support for custom API request timeout. Previously, timeouts were hardcoded to 30 seconds for providers like Ollama or 15 seconds for OpenRouter and Cline. Now users can set a custom timeout value in milliseconds through the settings interface.
+df37f29: Add support for custom API request timeout. Previously, timeouts were hardcoded to 30 seconds for providers like Ollama or 15 seconds for OpenRouter and clinesp. Now users can set a custom timeout value in milliseconds through the settings interface.
 e4d26be: allow cursorrules and windsurfrules
 c5de50f: Fix Handle @withRetry() SyntaxError when running extension locally issue
 61d2f42: enabled pricing calculation for gemini and vertex + more robust caching & cache tracking for gemini & vertex

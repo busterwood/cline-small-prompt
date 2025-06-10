@@ -5,7 +5,7 @@ import * as health from "grpc-health-check"
 
 const log = (...args: unknown[]) => {
 	const timestamp = new Date().toISOString()
-	console.log(`[${timestamp}]`, "#bot.cline.server.ts", ...args)
+	console.log(`[${timestamp}]`, "#bot.clinesp.server.ts", ...args)
 }
 
 // Load service definitions.

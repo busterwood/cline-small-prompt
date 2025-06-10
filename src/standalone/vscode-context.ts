@@ -44,15 +44,15 @@ const extensionContext: ExtensionContext = {
 
 	// Set up URIs.
 	storageUri: URI.file(DATA_DIR),
-	storagePath: DATA_DIR, // Deprecated, not used in cline.
+	storagePath: DATA_DIR, // Deprecated, not used in clinesp.
 	globalStorageUri: URI.file(DATA_DIR),
-	globalStoragePath: DATA_DIR, // Deprecated, not used in cline.
+	globalStoragePath: DATA_DIR, // Deprecated, not used in clinesp.
 
 	logUri: URI.file(DATA_DIR),
-	logPath: DATA_DIR, // Deprecated, not used in cline.
+	logPath: DATA_DIR, // Deprecated, not used in clinesp.
 
 	extensionUri: URI.file(EXTENSION_DIR),
-	extensionPath: EXTENSION_DIR, // Deprecated, not used in cline.
+	extensionPath: EXTENSION_DIR, // Deprecated, not used in clinesp.
 	asAbsolutePath: (relPath: string) => path.join(EXTENSION_DIR, relPath),
 
 	subscriptions: [], // These need to be destroyed when the extension is deactivated.

@@ -260,7 +260,7 @@ const ClineRulesToggleModal: React.FC = () => {
 								Rules allow you to provide Cline with system-level guidance. Think of them as a persistent way to
 								include context and preferences for your projects or globally for every conversation.{" "}
 								<VSCodeLink
-									href="https://docs.cline.bot/features/cline-rules"
+									href="https://docs.clinesp.bot/features/cline-rules"
 									style={{ display: "inline" }}
 									className="text-xs">
 									Docs
@@ -277,7 +277,7 @@ const ClineRulesToggleModal: React.FC = () => {
 								</span>{" "}
 								in the chat.{" "}
 								<VSCodeLink
-									href="https://docs.cline.bot/features/slash-commands/workflows"
+									href="https://docs.clinesp.bot/features/slash-commands/workflows"
 									style={{ display: "inline" }}
 									className="text-xs">
 									Docs

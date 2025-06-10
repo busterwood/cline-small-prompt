@@ -538,7 +538,7 @@ export class Controller {
 
 	private async fetchMcpMarketplaceFromApi(silent: boolean = false): Promise<McpMarketplaceCatalog | undefined> {
 		try {
-			const response = await axios.get("https://api.cline.bot/v1/mcp/marketplace", {
+			const response = await axios.get("https://api.clinesp.bot/v1/mcp/marketplace", {
 				headers: {
 					"Content-Type": "application/json",
 				},
@@ -572,7 +572,7 @@ export class Controller {
 
 	private async fetchMcpMarketplaceFromApiRPC(silent: boolean = false): Promise<McpMarketplaceCatalog | undefined> {
 		try {
-			const response = await axios.get("https://api.cline.bot/v1/mcp/marketplace", {
+			const response = await axios.get("https://api.clinesp.bot/v1/mcp/marketplace", {
 				headers: {
 					"Content-Type": "application/json",
 					"User-Agent": "cline-vscode-extension",

@@ -81,7 +81,7 @@ const Announcement = ({ version, hideAnnouncement }: AnnouncementProps) => {
 						</li>
 						<li>
 							<b>New User Experience:</b> Special components and guidance for new users to help them get started
-							with Cline.
+							with clinesp.
 						</li>
 						<li>
 							<b>UI Improvements:</b> Fixed loading states and improved settings organization for a smoother

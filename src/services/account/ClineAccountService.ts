@@ -3,7 +3,7 @@ import type { BalanceResponse, PaymentTransaction, UsageTransaction } from "@sha
 import { ExtensionMessage } from "@shared/ExtensionMessage"
 
 export class ClineAccountService {
-	private readonly baseUrl = "https://api.cline.bot/v1"
+	private readonly baseUrl = "https://api.clinesp.bot/v1"
 	private postMessageToWebview: (message: ExtensionMessage) => Promise<void>
 	private getClineApiKey: () => Promise<string | undefined>
 

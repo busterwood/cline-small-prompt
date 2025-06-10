@@ -24,7 +24,7 @@ export async function accountLoginClicked(controller: Controller, _: EmptyReques
 	const uriScheme = vscode.env.uriScheme
 
 	const authUrl = vscode.Uri.parse(
-		`https://app.cline.bot/auth?state=${encodeURIComponent(nonce)}&callback_url=${encodeURIComponent(`${uriScheme || "vscode"}://busterwood.clinesp/auth`)}`,
+		`https://app.clinesp.bot/auth?state=${encodeURIComponent(nonce)}&callback_url=${encodeURIComponent(`${uriScheme || "vscode"}://busterwood.clinesp/auth`)}`,
 	)
 	await vscode.env.openExternal(authUrl)
 	return String.create({
