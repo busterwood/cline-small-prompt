@@ -1124,7 +1124,7 @@ export class Controller {
 						// Format the git diff into a prompt
 						const prompt = `Based on the following git diff, generate a concise and descriptive commit message:
 
-${gitDiff.length > 5000 ? gitDiff.substring(0, 5000) + "\n\n[Diff truncated due to size]" : gitDiff}
+${gitDiff.length > 4000 ? gitDiff.substring(0, 4000) + "\n\n[Diff truncated due to size]" : gitDiff}
 
 The commit message should:
 1. Start with a short summary (50-72 characters)
@@ -1141,8 +1141,8 @@ Commit message:`
 						const apiHandler = buildApiHandler(apiConfiguration)
 
 						// Create a system prompt
-						const systemPrompt =
-							"You are a helpful assistant that generates concise and descriptive git commit messages based on git diffs."
+						const disableThinking = /qwen3/i.test(apiConfiguration.apiModelId ?? "") ? "/no_think" : ""
+						const systemPrompt = `You are a helpful assistant that generates concise and descriptive git commit messages based on git diffs. ${disableThinking}`
 
 						// Create a message for the API
 						const messages = [
